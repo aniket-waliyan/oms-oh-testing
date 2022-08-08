@@ -1,0 +1,31 @@
+{
+    "appName": "KafkaConsumerOhOmsLite",
+    "formattedAppName": "KAFKA_CONSUMER_Oh_OmsLite",
+    "moduleName": "Kafka Base Config",
+    "formattedModuleName": "KAFKA_BASE_CONFIG_Oh_OmsLite",
+    "description": "Config for Consumers in Kafka for OH-OmsLite Sync",
+    "config":
+      {
+        "name": "KART_Oh_OmsLite_CONSUMER",
+        "formattedName": "KART_Oh_OmsLite_CONSUMER",
+        "protocol": "roundrobin",
+        "sessionTimeout": 15000,
+        "encoding": "utf8",
+        "groupId": "developmentOhOmsLiteConsumerGroup",
+        "sslOptions": {
+          "rejectUnauthorized": false
+        },
+        "sasl": {
+          "mechanism": "plain",
+          "username": "R7UNEEKTVKGJVIZG",
+          "password": "bhZqrrajZgjltr2+MquGF+vICi53vKf5+KwCogrOTmJH0DzooQ5mug7JoWD3EHKA"
+        },
+        "autoCommit": false,
+        "kafkaHost": "pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092"
+      },
+    "topics" : [
+      "epsilon-server.epsilon.sales_orders",
+      "epsilon-server.epsilon.shipment_ivr_calls",
+      "epsilon-server.epsilon.shipment_orders"
+    ]
+  }
